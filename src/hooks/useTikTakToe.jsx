@@ -12,15 +12,53 @@ export const useTicTacToe = () => {
   const [feedback, setFeedback] = useState("");
 
   const allQuestions = [
-    { q: "The company that made ChatGPT", a: "openai" },
-    { q: "File format commonly used for datasets", a: "csv" },
-    { q: "A model that generates text or images based on input prompts is called ", a: "generative ai" },
-    { q: "The ratio of correct predictions to total predictions is known as ", a: "accuracy" },
-    { q: "20. The full form of API is ____. A) Application Programming Interface B) Artificial Program Intelligence C) Active Process Interface D) Applied Programming Interaction", a: "a" },
-    { q: "13. A visual chart used to represent data frequency is a ____.", a: "histogram" },
-    { q: "What is the full form of NLP in Artificial Intelligence? A) Neural Learning Process B) Natural Language Processing C) Network Logic Programming D) Numerical Logic Prediction", a: "b" },
-    { q: "Learning method in which models are trained on labeled data is called ____. A) Supervised Learning B) Unsupervised Learning C) Reinforcement Learning D) Transfer Learning", a: "a" },
-    { q: "A collection of related data stored in an organized form is a ____.", a: "dataset" },  ];
+  { 
+    q: "The company that made ChatGPT.", 
+    a: "A) OpenAI B) Google C) Meta D) Anthropic", 
+    correct: "A" 
+  },
+  { 
+    q: "File format commonly used for datasets.", 
+    a: "A) CSV B) MP3 C) DOCX D) PNG", 
+    correct: "A" 
+  },
+  { 
+    q: "A model that generates text or images based on input prompts is called ____.", 
+    a: "A) Generative AI B) Predictive AI C) Reactive AI D) Cognitive AI", 
+    correct: "A" 
+  },
+  { 
+    q: "The ratio of correct predictions to total predictions is known as ____.", 
+    a: "A) Accuracy B) Recall C) Precision D) F1 Score", 
+    correct: "A" 
+  },
+  { 
+    q: "The full form of API is ____.", 
+    a: "A) Application Programming Interface B) Artificial Program Intelligence C) Active Process Interface D) Applied Programming Interaction", 
+    correct: "A" 
+  },
+  { 
+    q: "A visual chart used to represent data frequency is a ____.", 
+    a: "A) Pie Chart B) Line Graph C) Histogram D) Scatter Plot", 
+    correct: "C" 
+  },
+  { 
+    q: "What is the full form of NLP in Artificial Intelligence?", 
+    a: "A) Neural Learning Process B) Natural Language Processing C) Network Logic Programming D) Numerical Logic Prediction", 
+    correct: "B" 
+  },
+  { 
+    q: "Learning method in which models are trained on labeled data is called ____.", 
+    a: "A) Supervised Learning B) Unsupervised Learning C) Reinforcement Learning D) Transfer Learning", 
+    correct: "A" 
+  },
+  { 
+    q: "A collection of related data stored in an organized form is a ____.", 
+    a: "A) Dataset B) Algorithm C) Model D) Framework", 
+    correct: "A" 
+  }
+];
+
 
   // Track which questions are left (not yet used)
   const [availableQuestions, setAvailableQuestions] = useState(allQuestions);
